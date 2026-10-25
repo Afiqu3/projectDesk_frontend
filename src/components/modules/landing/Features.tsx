@@ -56,7 +56,7 @@ export default function Features() {
             id="features-heading"
             className="mt-4 max-w-2xl font-heading text-4xl leading-[1.02] font-bold tracking-[-0.04em] sm:text-5xl"
           >
-            Built for merchants who ship every day.
+            Built for students.
           </h2>
         </Reveal>
 

@@ -60,7 +60,7 @@ export const loginSchema = z.object({
     password: z.string().min(1, "Password is required"),
 });
 
-export const merchantRegistrationSchema = z.object({
+export const studentRegistrationSchema = z.object({
     name: z
         .string("Enter a valid name")
         .min(3, "Name must at least 3 characters long!!!")

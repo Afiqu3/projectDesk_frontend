@@ -3,6 +3,8 @@ export const ROUTES = {
     login: "/login",
     register: "/register",
     about: "/about",
+    studentDashboard: "/dashboard/profile",
+    adminDashboard: "/admin-dashboard",
 } as const;
 
 export const SUPPORT = {

@@ -15,9 +15,7 @@ type PageHeroProps = {
   lines: HeadlineLine[];
   description: ReactNode;
   actions?: ReactNode;
-  /** Optional right-hand column on large screens (below on mobile). */
   aside?: ReactNode;
-  /** `navy` for merchant pages, `orange` for rider pages. */
   tone?: "navy" | "orange";
 };
 
