@@ -1,3 +1,8 @@
+import AboutUs from "@/components/modules/landing/AboutUs";
+import FAQ from "@/components/modules/landing/FAQ";
+import Features from "@/components/modules/landing/Features";
+import Hero from "@/components/modules/landing/Hero";
+import HowItWorks from "@/components/modules/landing/HowItWorks";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +14,11 @@ export const metadata: Metadata = {
 export default function HomePage() {
     return (
         <>
-            <h1>hello</h1>
+            <Hero />
+            <AboutUs />
+            <HowItWorks />
+            <Features />
+            <FAQ />
         </>
     );
 }

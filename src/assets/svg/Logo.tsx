@@ -3,8 +3,8 @@ export default function Logo() {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
-            width="256"
-            height="256"
+            width="206"
+            height="206"
             role="img"
             aria-label="P logo"
         >
