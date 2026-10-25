@@ -25,3 +25,8 @@ export interface MyProjectsParams {
     searchTerm?: string;
     sortOrder?: "desc" | "asc";
 }
+
+export interface ReviewedProjectPayload {
+    status: ProjectStatus;
+    reviewNote: string | null;
+}

@@ -176,7 +176,7 @@ function ProfileContent({ user }: { user: User }) {
                     </dl>
                     <p className="mt-4 border-t border-secondary/8 pt-3.5 text-xs text-secondary/55">
                         Joined on {formatJoinedOn(user.createdAt)} · To update
-                        these details, please contact ParcelFlow support.
+                        these details, please contact ProjectDesk support.
                     </p>
                 </section>
             </div>

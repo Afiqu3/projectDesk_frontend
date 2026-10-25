@@ -4,6 +4,7 @@ import type {
     CreatedProjectPayload,
     MyProjectsParams,
     Project,
+    ReviewedProjectPayload,
 } from "@/types";
 
 export const createProject = (payload: CreatedProjectPayload) => {
@@ -24,4 +25,21 @@ export const getAllMyProjects = async (params: MyProjectsParams) => {
         ...res,
         data: res.data,
     };
+};
+
+export const getAllProjects = async (params: MyProjectsParams) => {
+    const res = await apiClient<ApiResponse<Project[]>>("/project", {
+        params,
+    });
+    return {
+        ...res,
+        data: res.data,
+    };
+};
+
+export const reviewProject = (payload: ReviewedProjectPayload, id: string) => {
+    return apiClient(`/project/${id}/review`, {
+        method: "PATCH",
+        body: payload,
+    });
 };

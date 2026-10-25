@@ -72,3 +72,20 @@ export const createProjectSchema = z.object({
     liveUrl: liveUrlSchema,
     description: descriptionSchema,
 });
+
+export const reviewProjectSchema = z
+    .strictObject({
+        status: z.enum(["APPROVED", "REJECTED"], {
+            error: "Status must be APPROVED or REJECTED",
+        }),
+        reviewNote: z
+            .string()
+            .trim()
+            .max(500, "Note must be at most 500 characters")
+            .optional()
+            .transform((v) => (v ? v : undefined)), // "" -> undefined
+    })
+    .refine((data) => data.status !== "REJECTED" || !!data.reviewNote, {
+        path: ["reviewNote"],
+        error: "A note is required when rejecting a project",
+    });

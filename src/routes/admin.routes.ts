@@ -10,7 +10,7 @@ export const adminRoutes: SidebarItems = [
     {
         title: "Operations",
         items: [
-            { title: "Project", url: `${prefix}/projects`, icon: FolderKanban },
+            { title: "Projects", url: `${prefix}/projects`, icon: FolderKanban },
         ],
     },
     {
